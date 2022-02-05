@@ -1,0 +1,397 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+#tophelplineicon{
+    position: absolute;
+    left: 42%;
+    right: 42%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ff9517;
+    padding: 15px;
+    padding-bottom: 30px;
+    border-bottom-left-radius: 35%;
+    border-bottom-right-radius: 35%;
+    box-shadow: 6px 10px 11.31px -3.31px rgb(0 0 0 / 25%);
+
+}
+
+#phoneimage{
+    width: 35px;
+    margin-right: 15px;
+}
+#phonetext{
+    font-size: 16px;
+    font-weight: bold;
+}
+nav{
+    height: 180px;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 60px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+#orgicon{
+    position: relative;
+    top: -15%; 
+    width: 150px;
+    border-radius: 100%;
+    margin-right: 10%;
+}
+nav a{
+    font-size: 20px;
+    font-family: "Quicksand",sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+nav a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #e90000;
+    display: block;
+    margin-top: 5px;
+    transition: 0.5s;
+}
+nav a:hover::after{
+    width: 100%;
+}
+
+
+.donatediv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    border-radius: 10px;
+    background-color: #e90000;
+}
+.donatediv:hover{
+    background-color: #ff0a0a;
+
+}
+.donatediv p{
+    font-size: 16px;
+    color: white;
+    font-family: "Quicksand",sans-serif;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.donatediv img{
+    width: 30px;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+}
+.icon-bar{
+    position: fixed;
+    top: 35%;
+    bottom: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.icon-bar a{
+    width: 18.8rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    border-radius: 1rem;
+    font-size: 25px;
+    /* padding: 0.5rem; */
+    padding-left: 0.3rem;
+    transition: all 0.5s linear;
+    transform: translateX(-16rem);
+    z-index: 12;
+}
+.icon-bar a:hover{
+    transform: translateX(0);
+}
+.icon-bar a .fab{
+    padding-left: 1rem;
+    font-size: 3rem;
+    animation: letszoom 3s linear alternate-reverse infinite;
+}
+
+@keyframes letszoom{
+    from{
+        transform: scale(0.3);
+    }
+    to{
+        transform: scale(0.6);
+    }
+}
+.icon-bar .facebook{
+    background-color: rgb(66 ,103 ,178);
+}.icon-bar .telegram{
+    background-color: rgb(0, 136, 204);
+}
+.icon-bar .instagram{
+    background-color: #e4405f;
+}
+.icon-bar .linkedin{
+    background-color: #0077b5;
+}
+.icon-bar .youtube{
+    background-color: #FF0000;
+}
+
+.firstbaner {
+    min-height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/WhatsApp\ Image\ 2022-01-26\ at\ 09.17.03.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.wrapp {
+    margin: 0 auto;
+    padding: 10px 20px;
+    position: relative;
+    top: 70px;
+    left: 30px;
+}
+
+.heading {
+    background-color: #ff9517;
+    color: #000;
+    display: inline-block;
+    margin: 0;
+    width: 140px;
+    text-align: center;
+    padding: 1.389rem;
+    font-family: 'Bree Serif', serif;
+}
+
+.first {
+    margin: 5px 30px;
+    padding: 5px 8px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+.first a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    border-bottom: 2px solid rgb(122, 122, 211);
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.first span {
+    color: black;
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 2px;
+}
+
+.inner-page-title {
+    margin: 5px 30px;
+}
+
+.inner-page-title h2 {
+    color: black;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    padding: 5px;
+    font-family: 'Bree Serif', serif;
+    border-bottom: 3px solid #eeeeee;
+}
+
+.inner-page-title h2::after {
+    background-color: #4285F4;
+}
+
+.inner-page-title h2::after {
+    bottom: 95px;
+    content: "";
+    height: 3px;
+    left: 33px;
+    position: absolute;
+    width: 71px;
+}
+
+.page-featured-content img {
+    display: block;
+    margin: 15px auto;
+    width: 70%;
+    height: 530px;
+}
+
+.inner-page-content h3 {
+    font-size: 1.9rem;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    margin: 5px 30px;
+    border-bottom: 2px solid rgba(133, 171, 202, 0.822);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+
+
+.inner-page-content p {
+    font-size: 1.2rem;
+    /* font-family: 'Baloo Bhai 2', cursive; */
+      font-family: 'Bree Serif', serif; 
+    margin: 5px 35px;
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.815);
+    text-indent: 1px;
+}
+
+
+.about-box{
+    float: left;
+}
+
+
+.about-box .fa {
+    display: inline-block;
+    background-color: rgb(62, 62, 185);
+    width: 120px;
+    height: 120px;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    margin: 9px 36px;
+    font-size: 50px;
+    line-height: 125px;
+    overflow: hidden;
+    float: left;
+}
+
+.about-box h2{
+ color: black;
+ font-size: 1.4rem;
+ font-family: 'Mochiy Pop P One', sans-serif;
+ margin: 12px 5px;
+ text-transform: capitalize;
+ line-height: 1rem;
+ text-align: justify;
+}
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+.about-box p{
+ color: rgba(0, 0, 0, 0.751);
+ font-size: 1.2rem;
+ margin: 15px 5px;
+ text-transform: capitalize;
+ line-height: 1rem;
+ text-align: justify;
+ font-family: 'Bree Serif', serif;
+}
+
+
+
+footer{
+
+    height: 100vh;
+    padding: 40px 200px;
+    font-family: "Quicksand",sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+
+}
+
+footer .first{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+
+}
+footer .second{
+    height: 10%;
+    width: 100%;
+}
+.leftpart{
+    width: 25%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.leftpart a{
+    z-index: 10;
+    font-weight: 500;
+    color: black;
+    cursor: pointer;
+}
+.leftpart a:hover{
+    color: #e90000;
+}
+
+
+.rightpart{
+    width: 75%;
+    padding-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.rightpart p{
+    font-size: 20px;
+    padding: 10px;
+}
+
+.rightpart .findus .firstchild,.rightpart .followus .firstchild{
+    color:  #fe9516;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+footer .leftpart .navigation{
+    color:  #fe9516;
+    font-size: 35px;
+}
+.rightpart .followus .icons{
+    width: 100%;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.rightpart .followus .icons a{
+    padding-right: 20px;
+
+}
+.rightpart .followus .icons a img{
+    width: 45px;
+}
+footer .second{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
