@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team member Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .bgform {
+            min-height: 70vh;
+            width: 100%;
+            background-image: url(images/DSCF0763.jpg);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ftext {
+            margin: 0 auto;
+            padding: 10px 20px;
+            position: absolute;
+            top: 250px;
+            left: 200px;
+
+        }
+
+        .head {
+            background-color: rgba(233, 160, 24, 0.897);
+            color: black;
+            display: inline-block;
+            margin: 0;
+            width: 450px;
+            text-align: right;
+            font-family: 'Raleway', sans-serif;
+            letter-spacing: 0.05em;
+            font-weight: bold;
+            font-size: 42px;
+        }
+
+        .form {
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        #form-title {
+            font-family: "Quicksand";
+            font-size: 50px;
+            margin: 20px;
+            text-align: start;
+            line-height: 1.25;
+        }
+
+        .form-below {
+            font-family: "Quicksand";
+            font-weight: bold;
+            margin: 20px;
+            text-align: start;
+
+        }
+
+        .redd {
+            color: red;
+        }
+
+        .labell {
+            color: black
+        }
+
+        .form-input {
+            font-family: "Quicksand";
+            margin: 20px;
+            width: 850px;
+            height: 46px;
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+        .f-checkbox {
+            margin-left: 20px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-right: 10px;
+            width: 25px;
+            height: 25px;
+        }
+
+        .f-radio {
+            margin-left: 20px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            margin-right: 10px;
+            width: 25px;
+            height: 25px;
+        }
+
+        .f-file{
+            margin-left: 20px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            margin-right: 10px;
+            width: 200px;
+        }
+
+        #stime{
+            width: 150px;
+        }
+
+        #f-textarea{
+            font-family: "Quicksand";
+            margin: 20px;
+            width: 850px;
+            height: 175px;
+            padding: 5px;
+            border: 1px solid black;
+            border-radius:6px;
+        }
+
+        .f-btn{
+            margin: 20px;
+            margin-top: 10px;
+            width: 120px;
+            background-color:white;
+            border: 2px solid black;
+            font-size: 1.3rem;
+            padding: 5px 8px;
+            height: 40px;
+            border-radius: 3px;
+            color: black;
+            font-family: "Quicksand";
+            font-weight: bold;
+            transition:1s;
+        }
+
+        .f-btn:hover{
+            background-color:black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bgform">
+        <div class="ftext">
+            <h2 class="head">MEMBERSHIP FORM</h2><br>
+        </div>
+    </div>
+
+    <div class="form">
+        <h1 id="form-title">Team Membership Form</h1>
+        <h3 class="form-below">Fields marked with an <span class="redd">*</span> are required</h3>
+        <div class="box">
+            <label for="fname" class="form-below labell">First Name <span class="redd">*</span></label>
+            <br>
+            <input type="text" name="fname" class="form-input" placeholder="Enter Your First Name" required>
+        </div>
+
+        <div class="box">
+            <label for="lname" class="form-below labell">Last Name <span class="redd">*</span></label>
+            <br>
+            <input type="text" name="lname" class="form-input" placeholder="Enter Your Last Name"  required>
+        </div>
+
+        <div class="box">
+            <label for="city" class="form-below labell">City <span class="redd">*</span> </label>
+            <br>
+            <select name="city" id="scity" class="form-input"  required>
+                <option value="Select City">Select City</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Anand">Anand</option>
+                <option value="Gandhinagar">Gandhinagar</option>
+                <option value="Surat">Surat</option>
+                <option value="Bharuch">Bharuch</option>
+                <option value="vadodara">vadodara</option>
+                <option value="Valsad">Valsad</option>
+                <option value="Rajkot">Rajkot</option>
+            </select>
+        </div>
+        <div class="box">
+            <label for="email" class="form-below labell">Email <span class="redd">*</span></label>
+            <br>
+            <input type="email" name="email" class="form-input" placeholder="Enter Your Email ID"  required>
+        </div>
+
+        <div class="box">
+            <label for="cemail" class="form-below labell">Confirm Email <span class="redd">*</span></label>
+            <br>
+            <input type="email" name="con-email" class="form-input" placeholder="Confirm Your Email ID"  required>
+        </div>
+
+        <div class="box">
+            <label for="q1" class="form-below labell">Have you been to MNM before? <span class="redd">*</span></label>
+            <br>
+            <input type="checkbox" name="check" class="f-checkbox" value="Yes, I visited" >
+            <label for="c1" class="form-below labell" id="con">Yes, I visited</label>
+            <br>
+            <input type="checkbox" name="check" class="f-checkbox" value="Yes, I volunteered for less than a week">
+            <label for="c1" class="form-below labell" id="con">Yes, I volunteered for less than a week</label>
+            <br>
+            <input type="checkbox" name="check" class="f-checkbox" value="Yes, I volunteered for more than a week">
+            <label for="c1" class="form-below labell" id="con">Yes, I volunteered for more than a week</label>
+            <br>
+            <input type="checkbox" name="check" class="f-checkbox" value="No, not yet!" style="margin-bottom: 15px">
+            <label for="c1" class="form-below labell" id="con" style="margin-bottom: 15px">No, not yet!</label>
+        </div>
+
+        <div class="box">
+            <label for="joiningDate" class="form-below labell">(Estimated) Joining Date at MNM <span
+                    class="redd">*</span></label>
+            <br>
+            <input type="date" name="fname" class="form-input"  required>
+        </div>
+
+        <div class="box">
+            <label for="mobileno" class="form-below labell">Enter Your Mobile number <span class="redd">*</span></label>
+            <br>
+            <input type="tel" name="tel" class="form-input" placeholder="Enter Your mobile number"  required>
+        </div>
+
+        <div class="box">
+            <label for="skill" class="form-below labell">Do you have any veterinary medical skills or experience? <span
+                    class="redd">*</span></label>
+            <br>
+            <input type="radio" name="skills" class="f-radio">
+            <label for="yes" class="form-below labell" id="con">YES</label><br>
+            <input type="radio" name="skills" class="f-radio">
+            <label for="yes" class="form-below labell" id="con">NO</label>
+        </div>
+
+        <div class="box">
+            <label for="address" class="form-below labell">Enter Your Residence Address<span class="redd">*</span></label>
+            <br>
+            <input type="text" name="address" class="form-input" placeholder="Enter Your Residence Address"  required>
+        </div>
+
+        <div class="box">
+            <label for="photo" class="form-below labell">Upload Your Photo<span class="redd">*</span></label>
+            <br>
+            <input type="file" name="photo" class="f-file" placeholder="Upload Your photo"  required>
+        </div>
+
+        <div class="box">
+            <label for="time" class="form-below labell">How much time a week you can spend for MNM ? <span class="redd">*</span> </label>
+            <br>
+            <select name="time" id="stime" class="form-input"  required>
+                <option value="Select time">Select time</option>
+                <option value="1 hour">1 hour</option>
+                <option value="2 hour">2 hour</option>
+                <option value="3 hour">3 hour</option>
+                <option value="4 hour">4+ hour</option>
+            </select>
+        </div>
+
+        <div class="box">
+            <label for="comment" class="form-below labell">Do you have any comments or questions? <span class="redd">*</span></label>
+            <br>
+            <textarea name="comment" id="f-textarea" cols="30" rows="10"  required></textarea>
+        </div>
+   
+        <div class="box">
+           <input type="submit" value="submit" class="f-btn">
+        </div>
+
+        <h3 class="form-below"> <span class="redd"> Please correct errors before submitting this form.</span></h3>
+       
+    </div>
+</body>
+
+</html>
