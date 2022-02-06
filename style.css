@@ -100,30 +100,7 @@ a{
     text-decoration: none;
     outline: none;
 }
-/* .icon-bar{
-    position: fixed;
-    top: 35%;
-    bottom: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-}
 
-.icon-bar a{
-    width: 18.8rem;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    color: white;
-    border-radius: 1rem;
-    font-size: 25px;
-    padding-left: 0.3rem;
-    transition: all 0.5s linear;
-    transform: translateX(-16rem);
-    z-index: 12;
-}
-.icon-bar a:hover{
-    transform: translateX(0);
-}
 .icon-bar a .fab{
     padding-left: 1rem;
     font-size: 3rem;
@@ -132,12 +109,12 @@ a{
 
 @keyframes letszoom{
     from{
-        transform: scale(0.3);
+        transform: scale(0.4);
     }
     to{
-        transform: scale(0.6);
+        transform: scale(0.7);
     } 
-} */
+}
 
 .icon-bar{
     height: auto;
