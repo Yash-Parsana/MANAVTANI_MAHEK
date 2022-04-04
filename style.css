@@ -129,9 +129,7 @@ a{
     justify-content: space-around;
     align-items: center;
 }
-.icon-bar a{
 
-}
 
 .icon-bar .facebook{
     color: rgb(66 ,103 ,178);
@@ -207,9 +205,7 @@ a{
     background-image: url(images/dog.jpg);
     background-position: center;
     background-size: cover;
-
 }
-
 
 
 .infocontainer .text{
@@ -219,8 +215,13 @@ a{
     flex-direction: column;
     justify-content:space-between;
 }
+#infoContainerJoinus #text{
+    padding: 40px 80px;
+    text-align: justify;
+}
 .infocontainer .second{
-    padding: 80px 90px;
+    padding: 120px 80px; 
+    text-align: justify;
 }
 
 .infocontainer .text h2{
@@ -230,7 +231,7 @@ a{
 }
 
 .infocontainer .text p{
-
+    padding: 10px 0;
     font-size: 20px;
 
 }
@@ -812,3 +813,536 @@ footer .second{
     background-color: #fc0707;
 }
 
+
+@media(max-width:700px)
+{
+    body{
+        height: auto;
+        overflow-x: hidden;
+    }
+    #tophelplineicon{
+        height: 80px;
+        position: absolute;
+        left: 20%;
+        right: 20%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #ff9517;
+        padding: 15px;
+        padding-bottom: 30px;
+        margin-bottom: 200px;
+        border-bottom-left-radius: 35%;
+        border-bottom-right-radius: 35%;
+        box-shadow: 6px 10px 11.31px -3.31px rgb(0 0 0 / 25%);
+    
+    }
+    #orgicon{
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    nav{
+        position: relative;
+        top: 90px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        padding-left: 0;
+        padding-top: 0;
+        padding-right: 0;
+        margin-bottom: 100px;
+    }
+    nav a{
+        margin: 10px;
+    }
+    .icon-bar{
+        position: fixed;
+        height: 150px;
+        width: 50px;
+        top: 25%;
+        bottom: 20%;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #main_background {
+        margin-top: 150px;
+        height: 100vh;
+        width: 100%;
+        padding: 10px;
+        background-image: url(images/bg2.jpg);
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 25px;
+    }
+    .main_bag_textAnd_Button{
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+        font-family: "Quicksand",sans-serif;
+        font-size: 50px;
+    }
+    .main_bag_textAnd_Button #text{
+        font-size: 20px;
+    }
+    #mainbgdoantion p {
+        font-size: 18px;
+        color: white;
+    }
+    .main_bag_textAnd_Button p{
+        font-size: 25px;
+        padding: 10px 0;
+        font-weight: bold;
+        color:#e90000;
+    }
+    .infocontainer{
+        margin:0 25px;
+        height: 120vh;
+        font-family: "Quicksand",sans-serif;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .infocontainer .img {
+        width: 100%;
+        height: 50%;
+        background-image: url(images/rescue2.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    /* ----  */
+
+    .infocontainer .secondimg{
+        width: 100%;
+        height: 50%;
+        background-image: url(images/volunteer.jpg);
+        background-position: center;
+        background-size: cover;
+    
+    }
+    .infocontainer .thirdimg{
+        width: 100%;
+        height: 50%;
+        background-image: url(images/dog.jpg);
+        background-position: center;
+        background-size: cover;
+    
+    }
+    
+    
+    
+    .infocontainer .text{
+        width: 100%;
+        padding: 10px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+    }
+    .infocontainer .second{
+        width: 100%;
+        padding: 10px 10px;
+    }
+    
+    .infocontainer .text h2{
+    
+        color:#d57400 ;
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+    
+    .infocontainer .text p{
+    
+        font-size: 18px;
+    
+    }
+    .infocontainer .text a{
+    
+        width: max-content;
+        font-size: 20px;
+        background-color:#ff9517 ;
+        padding: 15px;
+        border-radius: 10px;
+        color: black;
+        margin-top: 20px;
+    
+    }
+    .Numbers{
+        height:auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-around;
+        background-color: #f5f5f5;
+        font-family: "Quicksand",sans-serif;
+        margin-top: 25px;
+    }
+    .Numbers #numbertop{
+        font-size: 20px;
+        padding: 20px 0;
+        font-weight: bold;
+    }
+    .Numbers .counthorizontal{
+        width: 100%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content:space-around;
+    }
+    .counterlayout{
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #459cc2;
+        padding: 20px;
+        margin: 20px 0;
+    }
+
+    footer{
+
+        height: auto;
+        padding: 20px ;
+        font-family: "Quicksand",sans-serif;
+        background-color: #f5f5f5;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    footer .first{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;
+    
+    }
+    footer .second{
+        height: 10%;
+        width: 100%;
+    }
+    .leftpart{
+        width: 25%;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+    .leftpart a{
+        width: auto;
+        z-index: 10;
+        font-weight: 500;
+        padding: 10px 10px;
+        color: black;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    .leftpart a:hover{
+        color: #e90000;
+    }
+    
+    
+    .rightpart{
+        width: 100%;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+    }
+    .rightpart p{
+        font-size: 15px;
+        padding: 10px;
+    }
+    
+    .rightpart .findus .firstchild,.rightpart .followus .firstchild{
+        color:  #fe9516;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    
+    footer .leftpart .navigation{
+        color:  #fe9516;
+        font-size: 35px;
+    }
+    .rightpart .followus .icons{
+        width: 100%;
+        padding-left: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .rightpart .followus .icons a{
+        padding-right: 20px;
+    
+    }
+    .rightpart .followus .icons a img{
+        width: 45px;
+    }
+    footer .second{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: flex-start;
+        font-size: 14px;
+    }
+    footer .second p{
+        text-align: left;
+        font-size: 10px;
+    }
+    .aboutusmain {
+        padding: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .aboutusmain p{
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .successstorymain {
+        width: 100%;
+        height: 72vh;
+        background: url(images/bg3.jpg);
+        background-position: center;
+        background-size: cover;
+        padding-left: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 50px;
+        align-items: center;
+        margin-top: 100px;
+    }
+    .successstorymain p{
+        font-size: 35px;
+    }
+    .successstorycontainer {
+        width: 100%;
+        height:auto;
+        display: flex;
+        font-family: "Quicksand",sans-serif;
+        background-color: #f5f5f5;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        padding: 30px;
+    }
+    .successstorycontainer .ssleft {
+        width: 100%;
+    }
+    .ssleft .large {
+        color: black;
+        font-size: 25px;
+        font-weight: 500;
+        margin-bottom: 25px;
+    }
+    .ssright {
+        width: 100%;
+        padding: 0px 20px;
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-weight: 500;
+    }
+    .successstoryCard {
+        height: auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .successstoryCard .card {
+        width: 84%;
+        height: auto;
+        display: flex;
+        font-family: "Quicksand",sans-serif;
+        flex-direction: column;
+        margin: 20px 0;
+    }
+    .successstoryCard .cardinfo .date {
+        color: #fe9516;
+        font-weight: 550;margin: 8px 0;
+    }
+    .successstoryCard .cardinfo .text {
+        font-size: 18px;
+        color: white;
+        margin: 20px 0;
+    }
+    .successstoryCard .cardinfo .btn {
+        padding: 15px;
+        font-size: 18px;
+        color: white;
+    }
+    .contactusmain {
+        width: 100%;
+        height: 72vh;
+        padding-left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .location {
+        width: 100%;
+        height: 50vh;
+        padding: 30px;
+    }
+    .contactdetails {
+        width: 100%;
+        height: auto;
+        padding: 30px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .contactdetails .left {
+        width: 100%;
+        padding: 0px;
+    }
+    .contactdetails .left div span h2 {
+        font-size: 16px;
+        padding: 3px;
+    }
+    .contactdetails .left div span {
+        margin-left: 12px;
+    }
+    .contactdetails .left div span p {
+        font-size: 12px;
+    }
+    .contactdetails .left div i {
+        padding: 10px 0;
+        color: #f44336;
+    }
+    .contactdetails .right {
+        width: 100%;
+    }
+    .contactdetails .right form {
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #infoContainerJoinus {
+        padding: 20px;
+    }
+    .infocontainer #img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+    #infoContainerJoinus #text  {
+        padding: 0px;
+    }
+    #infoContainerJoinus #text  p{
+        font-size: 16px;
+        text-align:justify;
+    }
+
+    .bgform{
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 72vh;
+    }
+    .head {
+        background-color: rgb(233, 160, 24);
+        color: black;
+        font-size: 25px;
+        padding: 12px;
+    }
+
+    .memberformcontainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form{
+        width: 100%;
+    }
+    .f-checkbox {
+        margin-left: 20px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-right: 10px;
+        width: 15px;
+        height: 25px;
+    }
+    .labell {
+        color: black;
+        font-size: 10px;
+        margin: 0;
+        margin-left: 20px;
+    }
+    #form-title {
+        font-family: "Quicksand";
+        font-size: 25px;
+        margin: 20px;
+        text-align: start;
+        line-height: 1.25;
+    }
+    .storycontainer{
+        padding: 20px;
+    }
+    .storycontainer iframe {
+        height: 50vh;
+    }
+    .storycontainer .date {
+        font-size: 12px;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+    .storycontainer .maintext {
+        font-weight: 700;
+        color: #d57400;
+        font-size: 20px;
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+    .storycontainer .details {
+        font-size: 14px;
+        font-weight: 500;
+        padding: 10px 0;
+        text-align: justify;
+    }
+    .storycontainer .buttons a {
+        width: fit-content;
+        padding: 10px;
+        font-size: 15px;
+        color: black;
+        border-radius: 10px;
+        border: 1px solid black;
+        transition: 0.5s;
+        margin-right: 15px;
+    }
+    .storycontainer .buttons .modified {
+        padding: 10px 20px;
+        border: none;
+    }
+    .successstorymain p {
+        font-family: "Quicksand",sans-serif;
+        font-size: 30px;
+        padding: 14px 18px;
+        background-color: #fe9516;
+    }
+}
